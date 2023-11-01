@@ -1,7 +1,10 @@
 from django.shortcuts import get_object_or_404, render
 from .models import MyProjects
+from django.shortcuts import render
+from telegram import Bot
+
 # Create your views here.
-def home(request):
+def home(request):  
     projects = MyProjects.objects.all() # Trae todos lo proyectos dentro de la DB
     return render(request, "home.html", {"projects": projects})
 
