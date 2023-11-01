@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from .models import MyProjects
 from django.shortcuts import render
-from telegram import Bot
+
 
 # Create your views here.
 def home(request):  
