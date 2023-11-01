@@ -10,3 +10,63 @@ body {
   border: 1px solid #eee;
     cursor: pointer;
   }
+  /* Estilos para el formulario de contacto */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para la lista de tecnologías */
+.tech-stack {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tech-stack li {
+  margin: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para los iconos */
+.fa {
+  margin-right: 5px;
+}
+
+.icon-img {
+  width: 2em; /* Establece el ancho de la imagen en relación con el tamaño de la letra */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  vertical-align: middle; /* Alinea verticalmente la imagen en el centro con el texto */
+  margin-right: 8px; 
+}
+
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+h1,h2, h3, p, img, li {
+  animation: slide-from-left 1s ease-out; /* Aplica la animación durante 1 segundo con una transición suave */
+}

@@ -9,7 +9,7 @@ from datetime import date
 
 class MyProjects(models.Model):
     title = CharField(max_length=100)
-    description = CharField(max_length=250)
+    description = CharField(max_length=2000)
     image = ImageField(upload_to='images/')
     url = URLField(blank=True)
     date = DateField(default=date.today)
