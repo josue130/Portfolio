@@ -1,0 +1,58 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 254px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px #666;
+    z-index: 1;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 20px #444; 
+    cursor: pointer;
+}
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+
+    }
+}
+
