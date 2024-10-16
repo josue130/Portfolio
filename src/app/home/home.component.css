@@ -1,0 +1,17 @@
+.first-section {
+    display: flex;
+    height: 100vh;
+}
+.second-section {
+    background-color: #f8f9fa;
+    display: grid;
+    gap: 30px; 
+    grid-template-columns: 1fr 1fr ;
+}
+
+@media (max-width: 768px) {
+    .second-section {
+        grid-template-columns: auto;
+        
+    }
+  }
