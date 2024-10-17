@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="cards">
+            @for (item of skills; track $index)
+            {
+            <div>
+                <img class="img-fluid skills-img" src={{item.src}} alt="skills" title={{item.title}} loading="lazy">
+            </div>
+            }
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="divider my-4"></div>
+    <div style="margin-top: 80px;">
+        <app-carousel></app-carousel>
+    </div>
+</div>
+

@@ -27,10 +27,15 @@ interface EventItem {
             <ng-template pTemplate="content" let-event>
                 <p><strong>{{event.status}}</strong></p>
                 <p>{{event.date}}</p>
-
-                <ul *ngIf="event.description">
-                    <li *ngFor="let item of event.description">{{ item }}</li>
-                </ul>
+                @if(event.description)
+                {
+                  <ul>
+                  @for (item of event.description; track item) 
+                    {
+                      <li>{{item}}</li>
+                    }
+                  </ul>
+                }
                 <button type="button" class="btn btn-outline-dark">Read more</button>
 
             </ng-template>
