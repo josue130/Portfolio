@@ -1,11 +1,12 @@
 .first-section {
     display: flex;
-    height: 100vh;
+    min-height: 100vh; 
     
 }
 .second-section {
     background-color: #f8f9fa;
     display: grid;
+    min-height: 100vh; 
     gap: 30px; 
     grid-template-columns: 1fr 1fr ;
 }
