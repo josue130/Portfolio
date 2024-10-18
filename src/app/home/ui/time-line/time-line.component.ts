@@ -18,7 +18,7 @@ interface EventItem {
   standalone: true,
   imports: [TimelineModule,CardModule,ButtonModule,CommonModule,AnimateOnScrollModule],
   template: `
-  <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+  <p-timeline  [value]="events" align="alternate" styleClass="customized-timeline">
             <ng-template pTemplate="marker" let-event>
                 <span>
                     <i [class]="event.icon"></i>

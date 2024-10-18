@@ -19,6 +19,7 @@ export class SkillsComponent {
 
   constructor(){
     this.skills = [
+      {src:"assets/svg/oracle.svg",title:"Oracle"},
       {src:"assets/svg/cshrp.svg",title:"C#"},
       {src:"assets/svg/dotnet.svg",title:".NET"},
       {src:"assets/svg/python.svg",title:"PYTHON"},
@@ -26,7 +27,7 @@ export class SkillsComponent {
       {src:"assets/svg/html.svg",title:"HTML"},
       {src:"assets/svg/css.svg",title:"CSS"},
       {src:"assets/svg/git.svg",title:"GIT"},
-      {src:"assets/svg/SqlServer.svg",title:"SQLServer"},
-      {src:"assets/svg/oracle.svg",title:"Oracle"}];
+      {src:"assets/svg/SqlServer.svg",title:"SQLServer"}
+      ];
   }
 }
