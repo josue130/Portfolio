@@ -14,5 +14,9 @@ export class HeroSectionComponent {
     const body = encodeURIComponent('I wanted to get in touch with you.');
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   }
+  openPdf() {
+    const pdfUrl = 'assets/sample.pdf';
+    window.open(pdfUrl, '_blank');
+  }
 
 }
