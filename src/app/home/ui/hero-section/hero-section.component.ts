@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './hero-section.component.css'
 })
 export class HeroSectionComponent {
+  openEmail() {
+    const email = 'josuelopez4301@gmail.com';
+    const subject = encodeURIComponent('Hello!');
+    const body = encodeURIComponent('I wanted to get in touch with you.');
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  }
 
 }
