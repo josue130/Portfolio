@@ -4,6 +4,13 @@
     align-items: center;
 }
 
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
 .project-card {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -91,5 +98,9 @@ span {
         right: 5px;
         font-size: 0.9rem; 
         padding: 8px 15px;
+    }
+    .cards-container
+    {
+        grid-template-columns: 1fr;
     }
 }
