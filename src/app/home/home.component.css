@@ -1,10 +1,10 @@
-.first-section {
+.main-container {
     display: flex;
-    min-height: 100vh; 
-    
+    flex-direction: column;
+    justify-content: center;
 }
 .second-section {
-    background-color: #f8f9fa;
+
     display: grid;
     min-height: 100vh; 
     gap: 30px; 
