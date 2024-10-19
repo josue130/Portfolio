@@ -1,0 +1,23 @@
+/* Estilo para animación de subrayado */
+.nav-link.underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+  
+  .nav-link.underline::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c4ff2f;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link.underline:hover::after {
+    width: 100%;
+  }
+  
