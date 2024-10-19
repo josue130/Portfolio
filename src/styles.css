@@ -13,4 +13,28 @@ body {
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.title-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #c4ff2f;
+}
 
