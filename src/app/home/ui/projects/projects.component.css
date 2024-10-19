@@ -1,0 +1,95 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    max-width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.project-card-img {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-card-title {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #c4ff2f;
+}
+
+.project-card-description {
+    line-height: 1.6;
+}
+
+.project-card-tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-card-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none; 
+    border: none; 
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+   }
+.project-card:hover {
+
+    box-shadow: 0 1px 10px 0 #c4ff2f;
+}
+.project-card:hover .project-card-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.project-card-button svg {
+    width: 32px;
+    height: 32px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+
+.project-card-button:hover svg {
+    fill: #a3e017;
+    stroke: #a3e017;
+}
+
+span {
+    margin-right: 15px;
+}
+@media (max-width: 768px) {
+    .project-card-button {
+        opacity: 1;
+        transform: translateY(0); 
+        top: 5px;
+        right: 5px;
+        font-size: 0.9rem; 
+        padding: 8px 15px;
+    }
+}
