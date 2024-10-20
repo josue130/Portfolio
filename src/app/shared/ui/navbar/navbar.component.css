@@ -1,4 +1,21 @@
-/* Estilo para animación de subrayado */
+
+
+.navbar-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease; 
+  background-color: transparent; 
+  border-bottom: 1px solid transparent; 
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+
 .nav-link.underline {
     position: relative;
     display: inline-block;
