@@ -6,8 +6,8 @@
 
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 20px; /* Espacio entre las tarjetas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     padding: 20px;
 }
 
@@ -65,7 +65,7 @@
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
    }
-.project-card:hover {
+.project-card:hover{
 
     box-shadow: 0 1px 10px 0 #c4ff2f;
 }

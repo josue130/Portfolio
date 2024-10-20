@@ -1,20 +1,7 @@
-.main-container {
+.main-container > div {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.second-section {
-
-    display: grid;
-    min-height: 100vh; 
-    gap: 30px; 
-    grid-template-columns: 1fr 1fr ;
-}
-
-@media (max-width: 768px) {
-    .second-section {
-        grid-template-columns: auto;
-        
-    }
-  }

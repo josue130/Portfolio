@@ -1,5 +1,46 @@
 <div class="main-container">
-    <app-hero-section></app-hero-section>
+    @defer (on viewport) {
+        <app-hero-section></app-hero-section>
+    
+        }@placeholder {
+        <div>By default2</div>
+        }@loading {
+        <div>Cargando.....2</div>
+        }@error {
+        <div>Error al cargar el componente2</div>
+        }
+   
+   
+    @defer (on viewport) {
     <app-experience></app-experience>
+
+    }@placeholder {
+    <div>By default2</div>
+    }@loading {
+    <div>Cargando.....2</div>
+    }@error {
+    <div>Error al cargar el componente2</div>
+    }
+    @defer (on viewport) {
     <app-projects></app-projects>
+
+    }@placeholder {
+    <div>By default3</div>
+    }@loading {
+    <div>Cargando.....3</div>
+    }@error {
+    <div>Error al cargar el componente</div>
+    }
+
+    @defer (on viewport) {
+    <app-about-me></app-about-me>
+
+    }@placeholder {
+    <div>By default4</div>
+    }@loading {
+    <div>Cargando.....4</div>
+    }@error {
+    <div>Error al cargar el componente4</div>
+    }
+
 </div>
