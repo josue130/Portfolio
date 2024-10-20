@@ -4,7 +4,6 @@ import { ExperienceComponent } from "./ui/experience/experience.component";
 import { ProjectsComponent } from './ui/projects/projects.component';
 import { AboutMeComponent } from "./ui/about-me/about-me.component";
 
-
 @Component({
   selector: 'app-home',
   standalone: true,

@@ -15,4 +15,10 @@ export class NavbarComponent {
   onWindowScroll() {
     this.scrolled = window.scrollY > 50; 
   }
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
