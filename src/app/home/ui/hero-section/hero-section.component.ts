@@ -15,7 +15,7 @@ export class HeroSectionComponent {
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
   }
   openPdf() {
-    const pdfUrl = 'assets/sample.pdf';
+    const pdfUrl = 'assets/pdf/Resume.pdf';
     window.open(pdfUrl, '_blank');
   }
 
