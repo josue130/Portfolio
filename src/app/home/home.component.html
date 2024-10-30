@@ -18,9 +18,9 @@
         <app-experience></app-experience>
 
         }@placeholder {
-        <div>By default2</div>
+        <div>By default</div>
         }@loading {
-        <div>Cargando.....2</div>
+        <div>Cargando.....</div>
         }@error {
         <div>Error al cargar el componente2</div>
         }
@@ -28,12 +28,12 @@
 
     <div id="projects">
         @defer (on viewport) {
-        <app-projects></app-projects>
+        <app-projects [projects]="projects"></app-projects>
 
         }@placeholder {
-        <div>By default3</div>
+        <div>By default</div>
         }@loading {
-        <div>Cargando.....3</div>
+        <div>Cargando.....</div>
         }@error {
         <div>Error al cargar el componente</div>
         }
@@ -44,11 +44,11 @@
         <app-about-me></app-about-me>
 
         }@placeholder {
-        <div>By default4</div>
+        <div>By default</div>
         }@loading {
-        <div>Cargando.....4</div>
+        <div>Cargando.....</div>
         }@error {
-        <div>Error al cargar el componente4</div>
+        <div>Error al cargar el componente</div>
         }
     </div>
 
