@@ -1,56 +1,49 @@
 <div class="main-container">
-    <div id="home">
+    <section id="home">
         @defer (on viewport) {
-        <app-hero-section></app-hero-section>
-
-        }@placeholder {
-        <div>By default2</div>
-        }@loading {
-        <div>Cargando.....2</div>
-        }@error {
-        <div>Error al cargar el componente2</div>
+            <app-hero-section></app-hero-section>
+        } @placeholder {
+            <div>By default2</div>
+        } @loading {
+            <div>Cargando.....2</div>
+        } @error {
+            <div>Error al cargar el componente2</div>
         }
+    </section>
 
-    </div>
-
-    <div id="exp">
+    <section id="exp">
         @defer (on viewport) {
-        <app-experience></app-experience>
-
-        }@placeholder {
-        <div>By default</div>
-        }@loading {
-        <div>Cargando.....</div>
-        }@error {
-        <div>Error al cargar el componente2</div>
+            <app-experience></app-experience>
+        } @placeholder {
+            <div>By default</div>
+        } @loading {
+            <div>Cargando.....</div>
+        } @error {
+            <div>Error al cargar el componente2</div>
         }
-    </div>
+    </section>
 
-    <div id="projects">
+    <section id="projects">
         @defer (on viewport) {
-        <app-projects [projects]="projects"></app-projects>
-
-        }@placeholder {
-        <div>By default</div>
-        }@loading {
-        <div>Cargando.....</div>
-        }@error {
-        <div>Error al cargar el componente</div>
+            <app-projects [projects]="projects"></app-projects>
+        } @placeholder {
+            <div>By default</div>
+        } @loading {
+            <div>Cargando.....</div>
+        } @error {
+            <div>Error al cargar el componente</div>
         }
-    </div>
+    </section>
 
-    <div id="about">
+    <section id="about">
         @defer (on viewport) {
-        <app-about-me></app-about-me>
-
-        }@placeholder {
-        <div>By default</div>
-        }@loading {
-        <div>Cargando.....</div>
-        }@error {
-        <div>Error al cargar el componente</div>
+            <app-about-me></app-about-me>
+        } @placeholder {
+            <div>By default</div>
+        } @loading {
+            <div>Cargando.....</div>
+        } @error {
+            <div>Error al cargar el componente</div>
         }
-    </div>
-
-
+    </section>
 </div>
