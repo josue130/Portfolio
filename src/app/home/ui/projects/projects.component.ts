@@ -18,4 +18,8 @@ interface Project {
 })
 export class ProjectsComponent {
   @Input() projects: Project[] = [];
+
+  openProjectSource(url: string): void {
+    window.open(url, '_blank');
+  }
 }

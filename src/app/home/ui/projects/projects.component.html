@@ -5,7 +5,7 @@
       </h2>
     </header>
     <div class="cards-container">
-      <div *ngFor="let project of projects" class="project-card">
+      <div *ngFor="let project of projects" class="project-card" (click)="openProjectSource(project.codeSource)">
         <div class="project-card-content">
           <figure class="project-card-img">
             <img [src]="project.imageUrl" loading="lazy" width="100%">
