@@ -3,11 +3,9 @@
         @defer (on viewport) {
             <app-hero-section></app-hero-section>
         } @placeholder {
-            <div>By default2</div>
-        } @loading {
-            <div>Cargando.....2</div>
+            <p-progressSpinner ariaLabel="loading" />
         } @error {
-            <div>Error al cargar el componente2</div>
+            <p-messages [(value)]="messages" [closable]="false" />
         }
     </section>
 
@@ -15,11 +13,9 @@
         @defer (on viewport) {
             <app-experience></app-experience>
         } @placeholder {
-            <div>By default</div>
-        } @loading {
-            <div>Cargando.....</div>
-        } @error {
-            <div>Error al cargar el componente2</div>
+            <p-progressSpinner ariaLabel="loading" />
+        }  @error {
+            <p-messages [(value)]="messages" [closable]="false" />
         }
     </section>
 
@@ -27,11 +23,9 @@
         @defer (on viewport) {
             <app-projects [projects]="projects"></app-projects>
         } @placeholder {
-            <div>By default</div>
-        } @loading {
-            <div>Cargando.....</div>
-        } @error {
-            <div>Error al cargar el componente</div>
+            <p-progressSpinner ariaLabel="loading" />
+        }  @error {
+            <p-messages [(value)]="messages" [closable]="false" />
         }
     </section>
 
@@ -39,11 +33,9 @@
         @defer (on viewport) {
             <app-about-me></app-about-me>
         } @placeholder {
-            <div>By default</div>
-        } @loading {
-            <div>Cargando.....</div>
+            <p-progressSpinner ariaLabel="loading" />
         } @error {
-            <div>Error al cargar el componente</div>
+            <p-messages [(value)]="messages" [closable]="false" />
         }
     </section>
 </div>
