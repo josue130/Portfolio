@@ -4,7 +4,6 @@ import { TagModule } from 'primeng/tag';
 interface Project {
   title: string;
   description: string;
-  imageUrl: string;
   technologies: string[];
   codeSource:string;
 }
