@@ -29,6 +29,12 @@ export class HomeComponent {
   ngOnInit() {
     this.projects = [
       {
+        title: 'Game Rating',
+        description: 'GameRating is designed to manage and rate video games. Developed using technologies such as .NET 8, C#, ASP.NET Core and Minimal APIs',
+        technologies: ["C#", ".NET", "ASP.NET", "SQL Server","GraphQL","Azure"],
+        codeSource: "https://github.com/josue130/GameRating"
+      },
+      {
         title: 'Spending Tracker',
         description: 'A financial tracking tool that allows users to record their expenses and incomes by categories, and get monthly balances.',
         technologies: ["C#", ".NET", "ASP.NET", "SQL Server","Redis",
