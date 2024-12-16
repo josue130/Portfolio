@@ -44,7 +44,7 @@ export class HomeComponent {
       {
         title: 'Shoe Store',
         description: 'This project demonstrates a simple microservices architecture using three APIs',
-        technologies: ["C#", ".NET", "ASP.NET", "SQL Server"],
+        technologies: ["C#", ".NET", "ASP.NET", "SQL Server","Ocelot"],
         codeSource: "https://github.com/josue130/ShoeStore"
       },
       {
